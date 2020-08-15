@@ -44,11 +44,11 @@ stages:
         mergeTestResults: true
         testRunTitle: 'publish regression and data validation test results'
 
-    - template: fakeapi.yaml
+    - template: fakeapi.yml
       parameters:
         name: fakerestapi
         path: '$(System.DefaultWorkingDirectory)/automatedtesting/jmeter/fakerestapi'
-    - template: fakeapi.yaml
+    - template: fakeapi.yml
       parameters:
         name: UITest
         path: '$(System.DefaultWorkingDirectory)/automatedtesting/selenium/login.py'
