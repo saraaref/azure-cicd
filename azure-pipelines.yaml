@@ -13,7 +13,7 @@ stages:
       inputs:
         knownHostsEntry: 'myVM'
         sshPublicKey: 'azurecicd'
-        sshKeySecureFile: 'id_rsa'
+        sshKeySecureFile: 'tls_private_key'
     - task: ArchiveFiles@2
       displayName: 'Archive FakeRestAPI'
       inputs:
