@@ -12,8 +12,8 @@ stages:
     - task: InstallSSHKey@0
       inputs:
         knownHostsEntry: 'myVM'
-        sshPublicKey: 'azurecicd'
-        sshKeySecureFile: 'tls_private_key'
+        sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDSYlwQ6VwV2px7f668OB2KmpVFFtugRNVilnk8Bku4jVeGVuwBp0diDrvPlDLlmKkR+OCh0CtxEI9245rRq+0Fug7HrL7uVP+R/Vx+Wkam90d8Bx+F03Hw25lfoTaANTSR4xV/ri+RWwuhQCLmjeCYeh2g3wSHpIpa5wAJVeWMdIwWfwOquvucRyPQAhufkbzbqzDYTU6p0rTYt/aoTe7dzrcdTLb/zxmxkOiDN+ihKdu0fBt8AiocawgcCC0k2PgPWjpOVrY9tLA0N1ZjYTxzJYSV8MTaDxekYtZQQEsZtfmHuFPqoJEN8YXTJvFPMEKAfSXbrGpPN2MMOS0FTByka6O/aiu+Uieaj3ychHhuXUlMy3z0xwAWj0NZ4IZsWaYC+z75505aHk6r1hry1VjTMliy7GotH2SyXf5UBe0gIq2qa2bAQZy1XAV0o5Del8jc6y8TDbjvNuai6wbYH6vi2PR16VXLxNu8OmyTZxE6RxejFB0u1JFRhuIdUCb4p1NIPO75+3l19pq2yAKDVg4iFp3v5MtuLhkj4wBGu7AfE5owrGCwNgwPz5bxypUeZEQ9vezUgch0vd68qGWKE9u/no3LN1GQWWIEKsgNPNPNOOkF2fierYzqzspZeqkpuTRo+YXzfUsvp+6MnXF5oWse76VcT68hr+zjSriBLYNPPQ== saro@saro-MacBook-Pro.local'
+        sshKeySecureFile: 'azure-cicd.pub'
     - task: ArchiveFiles@2
       displayName: 'Archive FakeRestAPI'
       inputs:
